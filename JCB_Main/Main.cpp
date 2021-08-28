@@ -1,6 +1,7 @@
 // JCB_Main.cpp : This file contains the 'main' function. Program execution begins and ends there.
 //
 
+#include <Windows.h>
 #include "../JCB_Logger/LogUtil.h"
 
 int main()
@@ -15,6 +16,8 @@ int main()
     LogUtil::Warn("JCB_Logger Warn Testing");
     LogUtil::Error("JCB_Logger Error Testing");
     LogUtil::Fatal("JCB_Logger Fatal Testing");
+
+    ::Sleep(1000);
 
     return 0;
 }
