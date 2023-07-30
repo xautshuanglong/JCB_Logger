@@ -849,8 +849,8 @@ namespace zlog
         }
 
     private:
-        ZLogStream() {}
-        ZLogStream(ZLogStream&) {}
+        ZLogStream() : _begin(nullptr), _end(nullptr), _cur(nullptr) {}
+        ZLogStream(ZLogStream&) : _begin(nullptr), _end(nullptr), _cur(nullptr) {}
         char*  _begin;
         char*  _end;
         char*  _cur;
